@@ -56,9 +56,9 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 ## 2. Copy Data using Azure Data Factory
 
-1. Within the [Azure Portal](https://portal.azure.com), navigate to your Azure Data Factory resource and click **Open Azure Data Factory Studio**.
+1. Within the [Azure Portal](https://portal.azure.com), navigate to your Azure Data Factory resource and click **Launch studio**.
 
-    ![](../images/module06/06.09-adf-author.png)
+    ![](../images/module06/img.png)
 
 2. Click **Ingest**.
 
