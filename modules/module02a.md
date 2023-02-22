@@ -98,7 +98,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
     
 8. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription and then `pvlab{randomId}adls` Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
-    ![Create Blob Container](../images/module02/m2a-t2-step8.png)
+    ![Create Blob Container](../images/module02/m2a-t2-step8.1.png)
 
 9. With the **raw** container selected, click on the **Upload** button and select **Upload Folder...**.
 
