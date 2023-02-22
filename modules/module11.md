@@ -298,21 +298,21 @@ Now the Storage Account Key has been stored in the Key Vault it is time to move 
 
 1. Navigate back to the Azure purview tab on the browser, go to **Management**(1) select **Credentials**(2) and click **+New**(3). On the **New credential** tab provide the following details and click **Create**:  
 
-|Settings|Value|
-|---|---|
-|Name|key-purview-secret|
-|Authentication method|Account key|
-|Key vault connection| myKeyVault|
-|Secret name|key-purview-secret|
+    |Settings|Value|
+    |---|---|
+    |Name|key-purview-secret|
+    |Authentication method|Account key|
+    |Key vault connection| myKeyVault|
+    |Secret name|key-purview-secret|
 
- > **Note**: It is important that this name exactly matches the name of your secret in the Key Vault!
+   > **Note**: It is important that this name exactly matches the name of your secret in the Key Vault!
    
-  ![ALT](../images/module11/M11-T6-img1.png)
+    ![ALT](../images/module11/M11-T6-img1.png)
 
 2. Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3) in the **Register source** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5) select your storage account from the list.
 
 
-    [ALT](../images/module11/M11-T6-img2.png)
+   ![ALT](../images/module11/M11-T6-img2.png)
 
 3. In the **Register sources** select your storage account and register.
      
