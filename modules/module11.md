@@ -28,15 +28,15 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 > **Note**: For deploying your Self-Hosted Integration Runtime you first need to create a new virtual network. This is needed for the virtual machine and private endpoint to be created.
   
-  ![ALT](../images/module11/M11-T1-img1.png)
+  ![ALT](../images/module11/M11-T1-img1.1.png)
 
 2. Click **Create** in the Virtual network page.
  
- ![ALT](../images/module11/M11-T1-img2.png)
+ ![ALT](../images/module11/M11-T1-img2.1.png)
 
 3.  In the **Create Virtual Network** tab select your subcription, from the drop down for **Resource Group** select **purviewlab-rg**
 
-  ![ALT](../images/module11/M11-T1-img3.png)
+  ![ALT](../images/module11/M11-T1-img3.1.png)
 
 4. Provide the following details for your Virtual Network and click on **Next: IP Addresses>**.
   
@@ -45,11 +45,11 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
   |Name|PurView_vnet_<inject key="DeploymentID" enableCopy="false" />|
   |Region|East US
   
-  ![ALT](../images/module11/M11-T1-img4.png)
+  ![ALT](../images/module11/M11-T1-img4.1.png)
 
 5.  On the **IP Addresses** review the proposed configuration and select **Review+Create** to create the **Virtual Network**.
 
-   ![ALT](../images/module11/M11-T1-img5.png)
+   ![ALT](../images/module11/M11-T1-img5.1.png)
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
@@ -59,14 +59,14 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
  
  > **Note**: We will setup a storage account for demonstration. This is the resource that will be scanned during this demo.
    
-   ![ALT](../images/module11/M11-T2-img1.png)
+   ![ALT](../images/module11/M11-T2-img1.1.png)
 
 2. Search Storage Account and select **Create**.
 
-   ![ALT](../images/module11/M11-T2-img2.png)
+   ![ALT](../images/module11/M11-T2-img2.1.png)
 3. On the **Create Storage Account** tab, select your subcription, and from the dropdown for **Resource Group** select **purviewlab-rg**. 
    
-  ![ALT](../images/module11/M11-T2-img3.png)
+  ![ALT](../images/module11/M11-T2-img3.1.png)
 
 4. Provide the following details for your storage account and click **Next: Advanced>**.
   
@@ -81,11 +81,11 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 5. In the **Advanced** section of **Create Storage Account** ensure that **hierarchical namespaces** are selected. Click next to jump over to the **Networking tab**.
 
-   ![ALT](../images/module11/M11-T2-img5.png)
+   ![ALT](../images/module11/M11-T2-img5.1.png)
 
 6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review**.
 
-   ![ALT](../images/module11/M11-T2-img6.png)
+   ![ALT](../images/module11/M11-T2-img6.1.png)
 
 7. Click **Create** to create the storage account.
     
