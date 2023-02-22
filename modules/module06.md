@@ -128,19 +128,19 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 1. Navigate back to the Purview Studio, from the **Data catalog** screen click **Browse**.
 
-    ![](../images/module06/m6tsk3stp1.1.png)
+    ![](../images/module06/m6-img1.png)
 
 2. Switch to the **By source type** tab and then select **Azure Data Factory**.
 
-    ![](../images/module06/m6tsk3stp2.png)
+    ![](../images/module06/m6-img2.png)
 
 3. Select the **Azure Data Factory account instance**.
 
-    ![](../images/module06/m6tsk3stp3.png)
+    ![](../images/module06/m6-img3.png)
 
 4. Select the **Copy Pipeline** and click to open the **Copy Activity**.
     
-    ![](../images/module06/m6tsk3stp4.png)
+    ![](../images/module06/m6-img4.png)
 
 5. Navigate to the **Lineage** tab.
 
