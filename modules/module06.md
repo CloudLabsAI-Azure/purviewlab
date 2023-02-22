@@ -78,7 +78,7 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 8. Click **Browse**.
 
-    ![](../images/module06/06.16-adf-browse.png))
+    ![](../images/module06/06.16-adf-browse.png)
 
 9. Navigate to `raw/BingCoronavirusQuerySet/2020/` and click **OK**.
     
