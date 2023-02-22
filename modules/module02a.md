@@ -196,7 +196,9 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
     ![View Details](../images/module02/m2aex5stp7.png)
 
-8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
+8. Click **Refresh** to periodically update the status of the scan. 
+
+    > **Note**: It will take approximately 5 to 10 minutes to complete.
 
     ![Monitor Scan](../images/module02/m2aex5stp8.png)
 
