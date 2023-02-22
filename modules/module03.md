@@ -47,11 +47,11 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     This dataset was curated from the Bing search logs (desktop users only) over the period of Jan 1st, 2020 – (Current Month - 1). Only searches that were issued many times by multiple users were included. The dataset includes queries from all over the world that had an intent related to the Coronavirus or Covid-19. In some cases this intent is explicit in the query itself (e.g., “Coronavirus updates Seattle”), in other cases it is implicit , e.g. “Shelter in place”
     ```
 
-    ![Update Description](../images/module03/m3tsk2stp2.png)
+    ![Update Description](../images/module03/m3-img1.png)
 
 3. Assign a **Classification** named **World Cities** using the drop-down menu.
 
-    ![Update Classification](../images/module03/m3tsk2stp3.png)
+    ![Update Classification](../images/module03/m3-img2.png)
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
@@ -59,7 +59,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     >
     > **Classifications** and **Glossary Terms** can be assigned at the asset level (e.g. a Table within a Database) as well as at the schema level (e.g. a Column within a Table Schema).
 
-    ![Update Schema](../images/module03/m3tsk2stp4.png)
+    ![Update Schema](../images/module03/m3-img3.png)
 
     **Date**
     ```
@@ -94,7 +94,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     >
     > For assets in which you are tagged as a **Contact**, these will appear on the home screen (Data catalog), under **My items**.
 
-    ![Update Contacts](../images/module03/prv26.png)
+    ![Update Contacts](../images/module03/m3-img4.png)
 
 6. To see other assets within the same path, navigate to the **Related** tab.
 
