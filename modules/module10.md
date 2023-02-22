@@ -998,9 +998,9 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | HTTP Method | `POST` |
     | URL | `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/types/typedefs` |
 
-    * In Postman, Navigate to **Auth** select the Bearer Token option from the drop down, provide the auth code from the previous step.
+    * In Postman, Navigate to **Authorization** select the Bearer Token option from the drop down, provide the auth code from the previous step.
 
-    ![Purview Properties](../images/module10/M10-T12-S2.png)
+    ![Purview Properties](../images/module10/m10-img4.png)
 
     * In Postman, Navigate to **Body**, and copy paste the content from below.
 
@@ -1139,13 +1139,14 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
    ![ALT](../images/module10/rest08.png)
 
-   * Navigate to Azure Purview portal select **Data Catalog>Browse Assets>By Source Type>Custom Source>Orders Table**.
+   * Navigate to Azure Purview portal select **Data Catalog>Browse Assets>By Source Type>Atlas Core>Customlineage01**.
 
- ![ALT](../images/module10/rest09.png)
+ ![ALT](../images/module10/m10-img5.png)
+ ![ALT](../images/module10/m10-img6.png)
       
 5. Under **Orders Table** select **Lineage** to view the output.
    
- ![ALT](../images/module10/rest10.png)
+ ![ALT](../images/module10/m10-img7.png)
 
 <div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
 
