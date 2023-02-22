@@ -39,7 +39,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
     ![Microsoft Purview](../images/module02/m2ex1stp1.png)
 
-2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignments (2)**.
+2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignment (2)**.
 
     ![Microsoft Purview](../images/module02/m2ex1stp2.1.png)
 
