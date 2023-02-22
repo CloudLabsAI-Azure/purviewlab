@@ -657,9 +657,9 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | Property | Example Value |
     | --- | --- |
     | Description | `purview-api` |
-    | Expires | `In 12 months` |
+    | Expires | `365 days (12 months)` |
 
-    ![](../images/module10/Mod7-purview4.png)
+    ![](../images/module10/m10-img1.png)
 
 3. **Copy** the client secret value for later use.
 
