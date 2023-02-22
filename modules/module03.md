@@ -106,19 +106,19 @@ While the search experience is ideal for keyword based discovery, Purview Studio
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** and click **Browse Assets**.
 
-    ![Browse Assets](../images/module03/m3tsk3stp1.png)
+    ![Browse Assets](../images/module03/m3-img5.png)
 
 2. Switch to the **By source type** tab and select a **source** `Azure Data Lake Storage Gen2`.
 
-    ![ADLS Gen2](../images/module03/m3tsk3stp2.png)
+    ![ADLS Gen2](../images/module03/m3-img6.png)
 
 3. Select an **account** named `pvlab{randomId}adls`.
 
-    ![ADLS Gen2 Account](../images/module03/m3ex3stp3.png)
+    ![ADLS Gen2 Account](../images/module03/m3-img7.png)
 
 4. Select a **container** with the name `raw`.
 
-    ![ADLS Gen2 Container](../images/module03/m3ex3stp4.png)
+    ![ADLS Gen2 Container](../images/module03/m3-img8.png)
 
 ## 4. Bulk Edit
 
