@@ -104,24 +104,24 @@ Your next step is creating a private endpoint: a network interface that uses a p
 2. On the basics tab provide name as `MyprivateEndpoint` . This will be name of your **Network Interface** created in the virtual network. Click on **Next:Resource>**
 
    
-   ![ALT](../images/module11/M11-T3-img2.png)
+   ![ALT](../images/module11/M11-T3-img2.1.png)
 
 
 3. Next on the **Resource** tab, you need to select which resource type you want to expose. For this demo we will use blob, from the dropdown select blob for **Target sub-resource**. Click on **Next: Virtual Network>**.
 
-   ![ALT](../images/module11/M11-T3-img3.png)
+   ![ALT](../images/module11/M11-T3-img3.1.png)
 
 4. The last configuration is selecting which virtual network the private endpoint must be deployed within. You should use the virtual network which you created in the previous steps. For the Private IP configuration you can select to dynamically allocate IP addresses.
 
-   ![ALT](../images/module11/M11-T3-img4.png)
+   ![ALT](../images/module11/M11-T3-img4.1.png)
  
  5. Leave rest of the configurations default and click **Create**
 
-   ![ALT](../images/module11/M11-T3-img5.png)
+   ![ALT](../images/module11/M11-T3-img5.1.png)
 
 6. After creating the endpoint return to the network overview settings, Go back to the **Firewall and virtual networks**(1) settings within your **Storage Account**. Under Public network access select **Enabled from selected virtual networks and IP addresses**(2), select **Add existing virtual network**(3) under Virtual networks. On the Add network pane select your **virtual network**(4) and **subnet**(5) from the list that you created previously, and click **Enable**(6) and **Add**. Then select **Save**(7).
 
-   ![ALT](../images/module11/M11-T3-img6.png)
+   ![ALT](../images/module11/M11-T3-img6.1.png)
 
 7. After this configuration you’re set. Let’s continue and setup your virtual machine.
 
@@ -135,7 +135,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
 1. On the Azure portal search bar type **Virtual Machine** and select, in the virtual machine tab select **Create** in the dropdown select **Azure virtual machine**. 
 
-   ![ALT](../images/module11/M11-T4-img1.png)
+   ![ALT](../images/module11/M11-T4-img1.1.png)
 
 2. In the **Create virtual machine** pane on **Basics** tab enter the following value. After the virtual machine has been created, download the RDP file for easily taking over remote control.
 
@@ -152,11 +152,11 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
    ![ALT](../images/module11/M11-T4-img1-New.png)
 
 3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**
-![ALT](../images/module11/M11-T4-img3.png)
+![ALT](../images/module11/M11-T4-img3.1.png)
 
 4. Once the Virtual Machine is created **go to resource** on the deployment page, select **Connect**(1) on the left pane under **Settings** and select **RDP**(2) and **Download RDP file**(3)
 
-      ![ALT](../images/module11/M11-T4-img4.png)
+      ![ALT](../images/module11/M11-T4-img4.1.png)
 
 5. After downloading your RDP file, open it and enter your username and password from the previous section. If everything goes well, you should be connected and see the virtual machine’s desktop. To validate that your private endpoint works correctly, open CMD and type:
 
@@ -166,16 +166,16 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
 6. If everything works correctly, the privatelink.blob.core.windows.net should show up in the list. This means is that your default access location has become an alias for an internal address. Although you use a public name, network is routed internally via the virtual network.
 
-      ![ALT](../images/module11/pic12.png)
+      ![ALT](../images/module11/pic12.1png)
 
 7. When everything is working, you must download the self-hosted integration runtime package. To do this navigate to the **Azure purview portal** on your browser. Select **Data map** and go to **Integration runtimes** select **+ New**
 
-      ![ALT](../images/module11/M11-T4-img5.png)
+      ![ALT](../images/module11/M11-T4-img5.1.png)
 
 8. On the **Intergartion run time setup** pane select **Self hosted**, and **Continue** and **Create**.
   
  
-      ![ALT](../images/module11/M11-T4-img6.png)
+      ![ALT](../images/module11/M11-T4-img6.1.png)
 
 9. After completing the wizard, you see a link where you can download the latest version of the runtime. You also find two keys. Copy the first one to your clipboard.
 
@@ -186,42 +186,42 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
  
 10. Open the download link in the Remote VM, and select download.
 
-      ![ALT](../images/module11/M11-T4-img7.png)
+      ![ALT](../images/module11/M11-T4-img7.1.png)
    
 10. On **Choose the download you want** select the latest runtime and select **Next**.
     
-      ![ALT](../images/module11/M11-T4-img8.png)
+      ![ALT](../images/module11/M11-T4-img8.1.png)
    
 
 11. Once the runtime is downloaded open runtime, on **Microsoft Integration Runtime setup** click **Next**.
 
    
-      ![ALT](../images/module11/M11-T4-img9.png)
+      ![ALT](../images/module11/M11-T4-img9.1.png)
 
 
 12. On the **End-User License** accept the terms and click **Next**.
 
-      ![ALT](../images/module11/M11-T4-img10.png)
+      ![ALT](../images/module11/M11-T4-img10.1.png)
 
 13. Leave the **Destination Floder** default and click **Next**.
 
-      ![ALT](../images/module11/M11-T4-img11.png)
+      ![ALT](../images/module11/M11-T4-img11.1.png)
 
 14. Click **Install** on **Ready to install Microsoft Integration Runtime**.
 
-      ![ALT](../images/module11/M11-T4-img12.png)
+      ![ALT](../images/module11/M11-T4-img12.1.png)
 
 15. Click **Finish** to complete the installation.
 
-      ![ALT](../images/module11/M11-T4-img13.png)
+      ![ALT](../images/module11/M11-T4-img13.1.png)
       
  16. After the **Runtime** is installed, on the **Register Integration Runtime (Self-hosted)** enter the key copied in Step-8 and select **Register** and select **Finish** once registerd .
  
-      ![ALT](../images/module11/M11-T4-img14.png)
+      ![ALT](../images/module11/M11-T4-img14.1.png)
   
   17. If everything works well your self-hosted integration runtime should be running within Purview. Congrats that you made it this far!
 
-      ![ALT](../images/module11/pic16.png)
+      ![ALT](../images/module11/pic16.1.png)
       
 
 ## 5. Key vault creation
