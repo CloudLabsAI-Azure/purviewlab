@@ -39,7 +39,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
     ![Microsoft Purview](../images/module02/m2ex1stp1.png)
 
-2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignments (2)**.
+2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignment (2)**.
 
     ![Microsoft Purview](../images/module02/m2ex1stp2.1.png)
 
@@ -65,7 +65,9 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 ## 2. Upload Data to Azure Data Lake Storage Gen2 Account
 
-1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. Note: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
+1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine.
+ 
+    > **Note**: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
 
 2. Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking the file and selecting **Extract All...**.
 
@@ -96,7 +98,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
     
 8. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription and then `pvlab{randomId}adls` Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
-    ![Create Blob Container](../images/module02/m2a-t2-step8.png)
+    ![Create Blob Container](../images/module02/m2a-t2-step8.1.png)
 
 9. With the **raw** container selected, click on the **Upload** button and select **Upload Folder...**.
 
@@ -194,7 +196,9 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
     ![View Details](../images/module02/m2aex5stp7.png)
 
-8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
+8. Click **Refresh** to periodically update the status of the scan. 
+
+    > **Note**: It will take approximately 5 to 10 minutes to complete.
 
     ![Monitor Scan](../images/module02/m2aex5stp8.png)
 

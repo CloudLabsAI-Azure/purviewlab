@@ -45,7 +45,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     > **Note:** Please make sure to choose the **same region as the Resource Group** as you might face issues while performing tasks in next modules.
   
-    ![Purview Account Basics](../images/module01/prv36.png)
+    ![Purview Account Basics](../images/module01/img-1.png)
 
   
     > **Did you know?**
@@ -62,11 +62,11 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 5. On the **Networking** tab, select **All networks**.
    
-    ![Networking](../images/module01/purv3.png)
+    ![Networking](../images/module01/img-2.png)
 
 6. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and click **Create**.
 
-    ![Create Purview Account](../images/module01/purv4.png)
+    ![Create Purview Account](../images/module01/img-3.png)
 
 7. Please wait for 5 - 10 minutes until the deployment is completed and then click on **Go to resource**.
 

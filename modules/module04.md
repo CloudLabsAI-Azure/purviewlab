@@ -79,9 +79,9 @@ In this lab you learn how to create terms using a system and custom term templat
 
 ## 2. Create a Term (Custom Term Template)
 
-1. Open the **Microsoft Purview Studio** and from the **Data catalog**, click **Glossary**.
+1. Open the **Microsoft Purview Studio** and from the **Data catalog**, click **Glossary** and click **Glossary**.
 
-    ![](../images/module04/m4-t2-step1.png)
+    ![](../images/module04/m4-img1.png)
 
 2. Click **New term**.
 
@@ -93,7 +93,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 4. Provide the Term Template a **Name** as `Contoso Template` and click **New attribute**.
 
-    ![Term template](../images/module04/04.06-attribute-new1.png)
+    ![Term template](../images/module04/m4-img2.1.png)
 
 5. Populate the attribute fields as per the examples below and click **Apply**.
 

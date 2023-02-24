@@ -47,11 +47,11 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     This dataset was curated from the Bing search logs (desktop users only) over the period of Jan 1st, 2020 – (Current Month - 1). Only searches that were issued many times by multiple users were included. The dataset includes queries from all over the world that had an intent related to the Coronavirus or Covid-19. In some cases this intent is explicit in the query itself (e.g., “Coronavirus updates Seattle”), in other cases it is implicit , e.g. “Shelter in place”
     ```
 
-    ![Update Description](../images/module03/m3tsk2stp2.png)
+    ![Update Description](../images/module03/m3-img1.png)
 
 3. Assign a **Classification** named **World Cities** using the drop-down menu.
 
-    ![Update Classification](../images/module03/m3tsk2stp3.png)
+    ![Update Classification](../images/module03/m3-img2.png)
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
@@ -59,7 +59,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     >
     > **Classifications** and **Glossary Terms** can be assigned at the asset level (e.g. a Table within a Database) as well as at the schema level (e.g. a Column within a Table Schema).
 
-    ![Update Schema](../images/module03/m3tsk2stp4.png)
+    ![Update Schema](../images/module03/m3-img3.png)
 
     **Date**
     ```
@@ -94,7 +94,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     >
     > For assets in which you are tagged as a **Contact**, these will appear on the home screen (Data catalog), under **My items**.
 
-    ![Update Contacts](../images/module03/prv26.png)
+    ![Update Contacts](../images/module03/m3-img4.png)
 
 6. To see other assets within the same path, navigate to the **Related** tab.
 
@@ -106,19 +106,19 @@ While the search experience is ideal for keyword based discovery, Purview Studio
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** and click **Browse Assets**.
 
-    ![Browse Assets](../images/module03/m3tsk3stp1.png)
+    ![Browse Assets](../images/module03/m3-img5.png)
 
 2. Switch to the **By source type** tab and select a **source** `Azure Data Lake Storage Gen2`.
 
-    ![ADLS Gen2](../images/module03/m3tsk3stp2.png)
+    ![ADLS Gen2](../images/module03/m3-img6.png)
 
 3. Select an **account** named `pvlab{randomId}adls`.
 
-    ![ADLS Gen2 Account](../images/module03/m3ex3stp3.png)
+    ![ADLS Gen2 Account](../images/module03/m3-img7.png)
 
 4. Select a **container** with the name `raw`.
 
-    ![ADLS Gen2 Container](../images/module03/m3ex3stp4.png)
+    ![ADLS Gen2 Container](../images/module03/m3-img8.png)
 
 ## 4. Bulk Edit
 

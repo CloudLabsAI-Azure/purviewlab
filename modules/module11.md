@@ -28,15 +28,15 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 > **Note**: For deploying your Self-Hosted Integration Runtime you first need to create a new virtual network. This is needed for the virtual machine and private endpoint to be created.
   
-  ![ALT](../images/module11/M11-T1-img1.png)
+  ![ALT](../images/module11/M11-T1-img1.1.png)
 
 2. Click **Create** in the Virtual network page.
  
- ![ALT](../images/module11/M11-T1-img2.png)
+ ![ALT](../images/module11/M11-T1-img2.1.png)
 
 3.  In the **Create Virtual Network** tab select your subcription, from the drop down for **Resource Group** select **purviewlab-rg**
 
-  ![ALT](../images/module11/M11-T1-img3.png)
+  ![ALT](../images/module11/M11-T1-img3.1.png)
 
 4. Provide the following details for your Virtual Network and click on **Next: IP Addresses>**.
   
@@ -45,11 +45,11 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
   |Name|PurView_vnet_<inject key="DeploymentID" enableCopy="false" />|
   |Region|East US
   
-  ![ALT](../images/module11/M11-T1-img4.png)
+  ![ALT](../images/module11/M11-T1-img4.1.png)
 
 5.  On the **IP Addresses** review the proposed configuration and select **Review+Create** to create the **Virtual Network**.
 
-   ![ALT](../images/module11/M11-T1-img5.png)
+   ![ALT](../images/module11/M11-T1-img5.1.png)
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
@@ -59,14 +59,14 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
  
  > **Note**: We will setup a storage account for demonstration. This is the resource that will be scanned during this demo.
    
-   ![ALT](../images/module11/M11-T2-img1.png)
+   ![ALT](../images/module11/M11-T2-img1.1.png)
 
 2. Search Storage Account and select **Create**.
 
-   ![ALT](../images/module11/M11-T2-img2.png)
+   ![ALT](../images/module11/M11-T2-img2.1.png)
 3. On the **Create Storage Account** tab, select your subcription, and from the dropdown for **Resource Group** select **purviewlab-rg**. 
    
-  ![ALT](../images/module11/M11-T2-img3.png)
+  ![ALT](../images/module11/M11-T2-img3.1.png)
 
 4. Provide the following details for your storage account and click **Next: Advanced>**.
   
@@ -81,11 +81,11 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 5. In the **Advanced** section of **Create Storage Account** ensure that **hierarchical namespaces** are selected. Click next to jump over to the **Networking tab**.
 
-   ![ALT](../images/module11/M11-T2-img5.png)
+   ![ALT](../images/module11/M11-T2-img5.1.png)
 
 6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review**.
 
-   ![ALT](../images/module11/M11-T2-img6.png)
+   ![ALT](../images/module11/M11-T2-img6.1.png)
 
 7. Click **Create** to create the storage account.
     
@@ -104,24 +104,24 @@ Your next step is creating a private endpoint: a network interface that uses a p
 2. On the basics tab provide name as `MyprivateEndpoint` . This will be name of your **Network Interface** created in the virtual network. Click on **Next:Resource>**
 
    
-   ![ALT](../images/module11/M11-T3-img2.png)
+   ![ALT](../images/module11/M11-T3-img2.1.png)
 
 
 3. Next on the **Resource** tab, you need to select which resource type you want to expose. For this demo we will use blob, from the dropdown select blob for **Target sub-resource**. Click on **Next: Virtual Network>**.
 
-   ![ALT](../images/module11/M11-T3-img3.png)
+   ![ALT](../images/module11/M11-T3-img3.1.png)
 
 4. The last configuration is selecting which virtual network the private endpoint must be deployed within. You should use the virtual network which you created in the previous steps. For the Private IP configuration you can select to dynamically allocate IP addresses.
 
-   ![ALT](../images/module11/M11-T3-img4.png)
+   ![ALT](../images/module11/M11-T3-img4.1.png)
  
  5. Leave rest of the configurations default and click **Create**
 
-   ![ALT](../images/module11/M11-T3-img5.png)
+   ![ALT](../images/module11/M11-T3-img5.1.png)
 
 6. After creating the endpoint return to the network overview settings, Go back to the **Firewall and virtual networks**(1) settings within your **Storage Account**. Under Public network access select **Enabled from selected virtual networks and IP addresses**(2), select **Add existing virtual network**(3) under Virtual networks. On the Add network pane select your **virtual network**(4) and **subnet**(5) from the list that you created previously, and click **Enable**(6) and **Add**. Then select **Save**(7).
 
-   ![ALT](../images/module11/M11-T3-img6.png)
+   ![ALT](../images/module11/M11-T3-img6.1.png)
 
 7. After this configuration you’re set. Let’s continue and setup your virtual machine.
 
@@ -135,7 +135,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
 1. On the Azure portal search bar type **Virtual Machine** and select, in the virtual machine tab select **Create** in the dropdown select **Azure virtual machine**. 
 
-   ![ALT](../images/module11/M11-T4-img1.png)
+   ![ALT](../images/module11/M11-T4-img1.1.png)
 
 2. In the **Create virtual machine** pane on **Basics** tab enter the following value. After the virtual machine has been created, download the RDP file for easily taking over remote control.
 
@@ -152,11 +152,11 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
    ![ALT](../images/module11/M11-T4-img1-New.png)
 
 3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**
-![ALT](../images/module11/M11-T4-img3.png)
+![ALT](../images/module11/M11-T4-img3.1.png)
 
 4. Once the Virtual Machine is created **go to resource** on the deployment page, select **Connect**(1) on the left pane under **Settings** and select **RDP**(2) and **Download RDP file**(3)
 
-      ![ALT](../images/module11/M11-T4-img4.png)
+      ![ALT](../images/module11/M11-T4-img4.1.png)
 
 5. After downloading your RDP file, open it and enter your username and password from the previous section. If everything goes well, you should be connected and see the virtual machine’s desktop. To validate that your private endpoint works correctly, open CMD and type:
 
@@ -166,16 +166,16 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
 6. If everything works correctly, the privatelink.blob.core.windows.net should show up in the list. This means is that your default access location has become an alias for an internal address. Although you use a public name, network is routed internally via the virtual network.
 
-      ![ALT](../images/module11/pic12.png)
+      ![ALT](../images/module11/pic12.1png)
 
 7. When everything is working, you must download the self-hosted integration runtime package. To do this navigate to the **Azure purview portal** on your browser. Select **Data map** and go to **Integration runtimes** select **+ New**
 
-      ![ALT](../images/module11/M11-T4-img5.png)
+      ![ALT](../images/module11/M11-T4-img5.1.png)
 
 8. On the **Intergartion run time setup** pane select **Self hosted**, and **Continue** and **Create**.
   
  
-      ![ALT](../images/module11/M11-T4-img6.png)
+      ![ALT](../images/module11/M11-T4-img6.1.png)
 
 9. After completing the wizard, you see a link where you can download the latest version of the runtime. You also find two keys. Copy the first one to your clipboard.
 
@@ -186,42 +186,42 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
  
 10. Open the download link in the Remote VM, and select download.
 
-      ![ALT](../images/module11/M11-T4-img7.png)
+      ![ALT](../images/module11/M11-T4-img7.1.png)
    
 10. On **Choose the download you want** select the latest runtime and select **Next**.
     
-      ![ALT](../images/module11/M11-T4-img8.png)
+      ![ALT](../images/module11/M11-T4-img8.1.png)
    
 
 11. Once the runtime is downloaded open runtime, on **Microsoft Integration Runtime setup** click **Next**.
 
    
-      ![ALT](../images/module11/M11-T4-img9.png)
+      ![ALT](../images/module11/M11-T4-img9.1.png)
 
 
 12. On the **End-User License** accept the terms and click **Next**.
 
-      ![ALT](../images/module11/M11-T4-img10.png)
+      ![ALT](../images/module11/M11-T4-img10.1.png)
 
 13. Leave the **Destination Floder** default and click **Next**.
 
-      ![ALT](../images/module11/M11-T4-img11.png)
+      ![ALT](../images/module11/M11-T4-img11.1.png)
 
 14. Click **Install** on **Ready to install Microsoft Integration Runtime**.
 
-      ![ALT](../images/module11/M11-T4-img12.png)
+      ![ALT](../images/module11/M11-T4-img12.1.png)
 
 15. Click **Finish** to complete the installation.
 
-      ![ALT](../images/module11/M11-T4-img13.png)
+      ![ALT](../images/module11/M11-T4-img13.1.png)
       
  16. After the **Runtime** is installed, on the **Register Integration Runtime (Self-hosted)** enter the key copied in Step-8 and select **Register** and select **Finish** once registerd .
  
-      ![ALT](../images/module11/M11-T4-img14.png)
+      ![ALT](../images/module11/M11-T4-img14.1.png)
   
   17. If everything works well your self-hosted integration runtime should be running within Purview. Congrats that you made it this far!
 
-      ![ALT](../images/module11/pic16.png)
+      ![ALT](../images/module11/pic16.1.png)
       
 
 ## 5. Key vault creation
@@ -298,21 +298,21 @@ Now the Storage Account Key has been stored in the Key Vault it is time to move 
 
 1. Navigate back to the Azure purview tab on the browser, go to **Management**(1) select **Credentials**(2) and click **+New**(3). On the **New credential** tab provide the following details and click **Create**:  
 
-|Settings|Value|
-|---|---|
-|Name|key-purview-secret|
-|Authentication method|Account key|
-|Key vault connection| myKeyVault|
-|Secret name|key-purview-secret|
+    |Settings|Value|
+    |---|---|
+    |Name|key-purview-secret|
+    |Authentication method|Account key|
+    |Key vault connection| myKeyVault|
+    |Secret name|key-purview-secret|
 
- > **Note**: It is important that this name exactly matches the name of your secret in the Key Vault!
+   > **Note**: It is important that this name exactly matches the name of your secret in the Key Vault!
    
-  ![ALT](../images/module11/M11-T6-img1.png)
+    ![ALT](../images/module11/M11-T6-img1.png)
 
 2. Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3) in the **Register source** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5) select your storage account from the list.
 
 
-    [ALT](../images/module11/M11-T6-img2.png)
+   ![ALT](../images/module11/M11-T6-img2.png)
 
 3. In the **Register sources** select your storage account and register.
      
