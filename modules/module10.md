@@ -1042,7 +1042,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 3. Create two custom entities.
 
-    * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/entity`
+    * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/entity`. Please make sure to remove the path added in previous step.
 
     * Replace the body with the following code block
 
