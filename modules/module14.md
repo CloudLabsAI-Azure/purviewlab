@@ -31,7 +31,7 @@ To make a data resource available for policy management, the Data Use Management
      ![Grant IAM privilege](../images/module14/14.01-storage-iam.png)
 
      
-2. On the **Add role assignment** page select **Owner** and move to the **Members** tab by clicking on **Next**.
+2. On the **Add role assignment** page, select **Owner** and move to the **Members** tab by clicking on **Next**.
 
    ![Grant Contributor privilege](../images/module14/M14-T1-img2.png)
    
@@ -41,11 +41,11 @@ To make a data resource available for policy management, the Data Use Management
    
    ![Grant Contributor privilege](../images/module14/M14-T1-img3a.png) 
 
-4. On the Review+assign page click **Review+assign** to add the role.
+4. On the Review+assign page, click **Review+assign** to add the role.
      
      ![Grant Contributor privilege](../images/module14/M14-T1-img4a.png) 
 
-5. Navigate to the Azure purview tab on your browser. In Purview grant the same user **Policy authors** role at the root collection level. Navigate to **Data map** >**Collections**>**Role assignments**. On the **Policy authors** click on **Add policy author**.
+5. Navigate to the Azure purview tab on your browser. In Purview, grant the same user **Policy authors** role at the root collection level. Navigate to **Data map** >**Collections**>**Role assignments**. On the **Policy authors** click on **Add policy author**.
 
      ![Grant DSA privilege](../images/module14/M14-T1-img5.png)
 
@@ -70,7 +70,7 @@ To make a data resource available for policy management, the Data Use Management
 
 ## 2. Author and Publish policies for an Azure Storage
 
-1. In the Microsoft Purview governance portal, navigate to the Data policy feature using the left side panel as shown
+1. In the Microsoft Purview governance portal, navigate to the Data policy feature using the left side panel and then click on **New Policy**. 
 
     ![Create policy](../images/module14/14.07-create-policy.png)
 
@@ -106,11 +106,11 @@ To make a data resource available for policy management, the Data Use Management
 
 10. A list of data sources is displayed. You can enter a name to filter the list. Then, select each data source where this policy is to be published and then select the **Publish** button.
 
-    ![Data Source](../images/module14/M14-T2-img3.png)
+    ![Data Source](../images/module14/M14-T2-img4.png)
   
-  11. If everything works you should be able to see your **Data lake storage** under **Resources published to**!
+  11. If everything works you should be able to see your **Data lake storage** under **Resources published to**.
     
-   ![Data Source](../images/module14/M14-T2-img4.png)
+   
 
 <div align="right"><a href="#module-14---data-owner-policies-azure-storage">↥ back to top</a></div>
 
