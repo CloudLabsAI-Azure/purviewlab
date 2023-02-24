@@ -45,7 +45,7 @@ In this lab you'll learn how to make use a managed private endpoints. You'll lea
 
       ![ALT](../images/module12/M12-T2-img5.png)   
 
-6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review** and **Review+Create** to create the storage account.
+6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review**.
 
     ![ALT](../images/module12/M12-T2-img6.png)
 
@@ -55,7 +55,9 @@ In this lab you'll learn how to make use a managed private endpoints. You'll lea
 
 ## 2. Authentication for a scan
 
-1.  Next you need to ensure two things: 1) purview’s managed identity has access to read from the storage account 2) the storage account key has been stored in the Key Vault. Go back to your storage account. Navigate to **Access Control (IAM)** and select **Add** in the drop down select **Add role assignment**.
+1.  Next you need to ensure two things: 
+    1) Purview’s managed identity has access to read from the storage account 
+    2) The storage account key has been stored in the Key Vault. Go back to your storage account. Navigate to **Access Control (IAM)** and select **Add** in the drop down select **Add role assignment**.
 
    ![ALT](../images/module11/M11-T5-img7.png)
    
@@ -97,11 +99,12 @@ With the newly released features Microsoft Purview now provides three options fo
 
    ![](../images/module12/Step13.png)
    
-   >**Note**: make sure to select all the approval links and approve it 
+   >**Note**: Make sure to select all the approval links and approve it 
       
       * When Approve connection pop-up appears click on **Yes**
       
          ![](../images/module12/Ex12-Task4-p4.png)
+         
                            
 5. Next, hover back to **Microsoft Purview**, click on **Management** from left menu and click on **Managed private endpoints**.
 
