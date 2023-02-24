@@ -45,9 +45,10 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
   |Name|PurView_vnet_<inject key="DeploymentID" enableCopy="false" />|
   |Region|East US
   
+  
   ![ALT](../images/module11/M11-T1-img4.1.png)
 
-5.  On the **IP Addresses** review the proposed configuration and select **Review+Create** to create the **Virtual Network**.
+5.  On the **IP Addresses** review the proposed configuration and select **Review+Create** and then **Create** to create the **Virtual Network**.
 
    ![ALT](../images/module11/M11-T1-img5.1.png)
 
@@ -79,7 +80,7 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
    ![ALT](../images/module11/M11-T2-S4-N.png)
 
-5. In the **Advanced** section of **Create Storage Account** ensure that **hierarchical namespaces** are selected. Click next to jump over to the **Networking tab**.
+5. In the **Advanced** section of **Create Storage Account** ensure that **hierarchical namespaces** are selected. Click next to jump over to the **Networking** tab.
 
    ![ALT](../images/module11/M11-T2-img5.1.png)
 
@@ -119,7 +120,7 @@ Your next step is creating a private endpoint: a network interface that uses a p
 
    ![ALT](../images/module11/M11-T3-img5.1.png)
 
-6. After creating the endpoint return to the network overview settings, Go back to the **Firewall and virtual networks**(1) settings within your **Storage Account**. Under Public network access select **Enabled from selected virtual networks and IP addresses**(2), select **Add existing virtual network**(3) under Virtual networks. On the Add network pane select your **virtual network**(4) and **subnet**(5) from the list that you created previously, and click **Enable**(6) and **Add**. Then select **Save**(7).
+6. After creating the endpoint return to the storage account then click on **Networking** under **Social + networking** tab, on **Firewall and virtual networks**(1) settings, under Public network access select **Enabled from selected virtual networks and IP addresses**(2), select **Add existing virtual network**(3) under Virtual networks. On the Add network pane select your **virtual network**(4) and **subnet**(5) from the list that you created previously, and click **Enable**(6) and **Add**. Then select **Save**(7).
 
    ![ALT](../images/module11/M11-T3-img6.1.png)
 
@@ -144,21 +145,23 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 |Resource Group|purviewlab-rg|
 |Virtual machine name|pur-M11-VM|
 |Availability Options| No infrastructure reduncancy required|
-|Image|Windows 10 pro|
+|Image|Windows 10 Pro, version 21H2 - x64 Gen2|
 |Username|demouser|
 |Password|demo!pass123|
+|Licensing| Select the check box for I confirm I have an eligible Windows 10/11 license with multi-tenant hosting right.
 
 
    ![ALT](../images/module11/M11-T4-img1-New.png)
 
-3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**
+3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**. Once the validation is passed, click on **Create**.
+
 ![ALT](../images/module11/M11-T4-img3.1.png)
 
-4. Once the Virtual Machine is created **go to resource** on the deployment page, select **Connect**(1) on the left pane under **Settings** and select **RDP**(2) and **Download RDP file**(3)
+4. Once the Virtual Machine is created click on **Go to resource** on the deployment page, select **Connect**(1) on the left pane under **Settings** and select **RDP**(2) and **Download RDP file**(3)
 
       ![ALT](../images/module11/M11-T4-img4.1.png)
 
-5. After downloading your RDP file, open it and enter your username and password from the previous section. If everything goes well, you should be connected and see the virtual machine’s desktop. To validate that your private endpoint works correctly, open CMD and type:
+5. After downloading your RDP file, open it and enter your username and password from the previous section. If everything goes well, you should be connected and see the virtual machine’s desktop. To validate that your private endpoint works correctly, open Command Prompt and type:
 
    ```text
    nslookup storageaccountname.blob.core.windows.net
@@ -166,13 +169,13 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
 6. If everything works correctly, the privatelink.blob.core.windows.net should show up in the list. This means is that your default access location has become an alias for an internal address. Although you use a public name, network is routed internally via the virtual network.
 
-      ![ALT](../images/module11/pic12.1png)
+     ![ALT](../images/module11/pic12.1.png)
 
 7. When everything is working, you must download the self-hosted integration runtime package. To do this navigate to the **Azure purview portal** on your browser. Select **Data map** and go to **Integration runtimes** select **+ New**
 
       ![ALT](../images/module11/M11-T4-img5.1.png)
 
-8. On the **Intergartion run time setup** pane select **Self hosted**, and **Continue** and **Create**.
+8. On the **Intergartion run time setup** pane select **Self hosted**, and select **Continue** and then **Create**.
   
  
       ![ALT](../images/module11/M11-T4-img6.1.png)
@@ -184,7 +187,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
     
    ![ALT](../images/module11/pic14.png)
  
-10. Open the download link in the Remote VM, and select download.
+10. Open the download link in the Remote VM, and select **Download**.
 
       ![ALT](../images/module11/M11-T4-img7.1.png)
    
@@ -215,7 +218,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
       ![ALT](../images/module11/M11-T4-img13.1.png)
       
- 16. After the **Runtime** is installed, on the **Register Integration Runtime (Self-hosted)** enter the key copied in Step-8 and select **Register** and select **Finish** once registerd .
+ 16. After the **Runtime** is installed, on the **Register Integration Runtime (Self-hosted)** enter the key copied in Step-8 and select **Register**. Once registered, select **Finish**.
  
       ![ALT](../images/module11/M11-T4-img14.1.png)
   
@@ -228,7 +231,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
 For securely accessing your storage account you will store your storage account key in a Key Vault. A key vault is a central place for managing your keys, secrets, credentials and certifications. This avoids keys get lost or changing these is a cumbersome task.
 
-1. For creating a Key Vault go back to your **Azure Portal**. Search for **Key Vault**, hit create, provide the details mentioned below and select **Review+Create**.
+1. For creating a Key Vault go back to your **Azure Portal**. Search for **Key Vault**, hit create, provide the details mentioned below and select **Review+Create** then **Create**.
 
 |Settings|Value|
 |---|---|
@@ -238,7 +241,7 @@ For securely accessing your storage account you will store your storage account 
     
    ![ALT](../images/module11/M11-T5-img1.png)
 
-2. After deployment you need to ensure that Microsoft Purview has read access to the Key Vault. Open Key Vault, go to **Access configuration**, and hit **Go to access policies**.
+2. Once the deployment is succeeded, you need to ensure that Microsoft Purview has read access to the Key Vault. Open Key Vault, go to **Access configuration** under **Settings** , and hit **Go to access policies**.
 
    ![ALT](../images/module11/pic19.png)
 
@@ -254,15 +257,16 @@ For securely accessing your storage account you will store your storage account 
 
    ![ALT](../images/module11/M11-T5-img5.png)
    
- 6. Leave the **Application** pane default and on **Review+Create** click **Create**.
+ 6. Leave the **Application** pane as default and select **Review+Create** then, click on **Create**.
  
    ![ALT](../images/module11/M11-T5-img6.png)
  
 7. Next you need to ensure two things: 
-    1) purview’s managed identity has access to read from the storage account 
-    2) the storage account key has been stored in the Key Vault. 
+    1) Purview’s managed identity has access to read from the storage account 
+    2) The storage account key has been stored in the Key Vault. 
    
-   Go back to your storage account. Navigate to **Access Control (IAM)** and select **Add** in the drop down select **Add role assignment**.
+   
+   Go back to your storage account. Navigate to **Access Control (IAM)** and select **Add**, in the drop down select **Add role assignment**.
 
    ![ALT](../images/module11/M11-T5-img7.png)
 
@@ -270,7 +274,7 @@ For securely accessing your storage account you will store your storage account 
 
    ![ALT](../images/module11/M11-T5-img8.png)
 
-9. Under **Members** choose **Managed identity**(1) for **Assign access to**, click on **+Select members**(2), in the **Select managed identities** pane from the drop down for **Managed identities** select **Microsoft Purview account**(3), under **Select** choose **pvlab-<inject key="DeploymentID" enableCopy="false" />-pv**(4) and **Select**(5).
+9. Under **Members** choose **Managed identity**(1) for **Assign access to**, click on **+Select members**(2), in the **Select managed identities** pane from the drop down for **Managed identities** select **Microsoft Purview account**(3), under **Select** choose **pvlab-<inject key="DeploymentID" enableCopy="false" />-pv**(4) and then, click on **Select**(5).
 
  ![ALT](../images/module11/M11-T5-img9.png)
  
@@ -278,11 +282,11 @@ For securely accessing your storage account you will store your storage account 
  
  ![ALT](../images/module11/M11-T5-img10.png)
 
-11. Next, go to **Access keys** within the **Storage account** section. Show the keys using the show button. Select Key1 and copy the secret to your clipboard. Head back to your Key Vault.
+11. Next, go to **Access keys** under **Security + networking** section within the **Storage account**. Show the keys using the show button. Select Key1 and copy the value to your clipboard. Head back to your Key Vault.
 
    ![ALT](../images/module11/pic18.png)
 
-12. Within your Key Vault, select **Secrets** and choose **+ Generate/Import**. 
+12. Within your Key Vault, select **Secrets** under **Objects** and choose **+ Generate/Import**. 
 
  ![ALT](../images/module11/M11-T5-img11.png)
 
@@ -296,7 +300,7 @@ For securely accessing your storage account you will store your storage account 
 
 Now the Storage Account Key has been stored in the Key Vault it is time to move back to Microsoft Purview for your final configuration. Go to your settings panel on the right and select Credentials.
 
-1. Navigate back to the Azure purview tab on the browser, go to **Management**(1) select **Credentials**(2) and click **+New**(3). On the **New credential** tab provide the following details and click **Create**:  
+1. Navigate back to the Azure purview tab on the browser, go to **Management**(1), select **Credentials**(2) and click **+New**(3). On the **New credential** tab provide the following details and click **Create**:  
 
     |Settings|Value|
     |---|---|
@@ -309,12 +313,12 @@ Now the Storage Account Key has been stored in the Key Vault it is time to move 
    
     ![ALT](../images/module11/M11-T6-img1.png)
 
-2. Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3) in the **Register source** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5) select your storage account from the list.
+2. Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3), in the **Register sources** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5).
 
 
    ![ALT](../images/module11/M11-T6-img2.png)
 
-3. In the **Register sources** select your storage account and register.
+3. In the **Register sources** select your Azure subscription and storage account name. Then click on **Register**.
      
      ![ALT](../images/module11/M11-T6-img3.png)
 
@@ -323,7 +327,7 @@ Now the Storage Account Key has been stored in the Key Vault it is time to move 
     ![ALT](../images/module11/M11-T6-img4.png)
 
 
-5. Select your Self-Hosted Integration Runtime from the list. Before you continue ensure everything works by testing your connection.
+5. Select your Self-Hosted Integration Runtime from the list. Before you continue ensure everything works by testing your connection by clicking on **Test connection**.
 
    ![ALT](../images/module11/pic29.png)
 
