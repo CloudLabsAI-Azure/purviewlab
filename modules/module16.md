@@ -35,7 +35,7 @@ Your Azure subscription must be registered for the Microsoft.Storage **AllowData
 
     ![ALT](https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/images/16.02.png)
 
-3. Scroll down on the left side menu and click **Preview features**, filter the results by searching for `AllowDataSharing`, select the **AllowDataSharing** feature and click **Register**. Periodically click **Refresh** to confirm the state is **Registered**. Note: This can take 15 minutes to 1 hour to complete.
+3. Scroll down on the left side menu and click on **Preview features** under **Settings** , filter the results by searching for `AllowDataSharing`, select the **AllowDataSharing** feature and click **Register**. Periodically click **Refresh** to confirm the state is **Registered**. Note: This can take 15 minutes to 1 hour to complete.
 
     ![ALT](https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/images/16.03.png)
 
@@ -90,7 +90,7 @@ Microsoft Purview Data Sharing supports sharing of files and folders in-place fr
 
 Before we can create a share, we must populate our storage account with some folders and files.
 
-1. On the side menu, click **Storage browser**.
+1. On the side menu, click on **Storage browser**.
 
     ![ALT](https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/images/16.10.png)
 
@@ -209,6 +209,8 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 4. Set the **Type** to **Azure Blob Storage**, select your registered Azure Blob Storage **source**, and click **Continue**.
 
     ![ALT](https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/images/16.36.png)
+    
+    >**Note:** It might take few minutes for a source to reflect because AllowDataSharing feature takes some time to get registered. 
 
 5. Open the `send` container, select the `data` folder, and click **Add**.
 
@@ -238,7 +240,7 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
     ![ALT](https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/images/16.42.png)
 
-4. Select the target Azure Blob Storage account from the list of sources, set the **Path**, set the **Folder**, and click **Map to target**.
+4. Select the target Azure Blob Storage account from the list of sources, set the **Path** to **receive**, set the **Folder** to **data**, and click **Map to target**.
 
     ![ALT](https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/images/16.43.png)
 
